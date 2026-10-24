@@ -1,0 +1,70 @@
+{
+  "config": {
+    "apiBase": "https://example.test/api/v1",
+    "module": "directory",
+    "slug": "sample-provider",
+    "registryName": "io.example/provider",
+    "websiteUrl": "https://fallback.test",
+    "logoUrl": "https://fallback.test/logo.png",
+    "docsUrl": "https://fallback.test/docs",
+    "license": "MIT",
+    "copyrightHolder": "Example Organization",
+    "repo": "example/mirror",
+    "endpointVariants": [
+      { "id": "full", "path": "" },
+      { "id": "quote-only", "path": "/quote-only" },
+      { "id": "info-only", "path": "/info-only" }
+    ]
+  },
+  "openapi": {
+    "openapi": "3.1.0",
+    "info": { "title": "Example service", "description": "Live public service description.", "version": "3.0.0" },
+    "servers": [{ "url": "https://example.test/api/v1/public/directory/sample-provider" }],
+    "paths": { "/services": { "get": {} } }
+  },
+  "services": {
+    "provider": "Example Provider",
+    "timeZone": "Europe/Berlin",
+    "languages": ["de", "en"],
+    "services": [{ "key": "sample_service" }],
+    "serviceAreas": [
+      { "label": "Munich city", "timeZone": "Europe/Berlin", "areas": [{ "label": "Munich Airport (MUC)" }] },
+      { "label": "Vienna city", "timeZone": "Europe/Vienna", "areas": [{ "label": "Vienna Airport", "timeZone": "Europe/Vienna" }] }
+    ]
+  },
+  "registry": {
+    "servers": [
+      {
+        "server": { "name": "io.example/provider", "version": "0.1.0" },
+        "_meta": { "io.modelcontextprotocol.registry/official": { "isLatest": false } }
+      },
+      {
+        "server": {
+          "name": "io.example/provider",
+          "title": "Example registry title",
+          "description": "Example registry description.",
+          "version": "1.1.0",
+          "websiteUrl": "https://live.test/docs",
+          "icons": [{ "src": "https://live.test/logo.png" }],
+          "remotes": [{ "type": "streamable-http", "url": "https://example.test/mcp" }]
+        },
+        "_meta": { "io.modelcontextprotocol.registry/official": { "isLatest": true } }
+      }
+    ]
+  },
+  "distribution": {
+    "platforms": [
+      { "name": "Live Directory", "status": "live", "evidence_url": "https://directory.test/server" },
+      { "name": "Pending Directory", "status": "planned", "evidence_url": "https://pending.test" }
+    ]
+  },
+  "initialize": {
+    "protocolVersion": "2025-03-26",
+    "serverInfo": { "name": "example-customer", "version": "2.2.0" },
+    "instructions": "Use published service information. These tools do not take payment, dispatch work, or send a message."
+  },
+  "tools": [
+    { "name": "read_options", "title": "Read options", "description": "Published options | current areas.\nNo booking.", "annotations": { "readOnlyHint": true } },
+    { "name": "prepare_request", "description": "Prepare a request only with consent.", "annotations": { "readOnlyHint": false } }
+  ]
+}
