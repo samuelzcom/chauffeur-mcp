@@ -22,8 +22,6 @@ jobs:
   regenerate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      TMPDIR: ${{ runner.temp }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -33,6 +31,8 @@ jobs:
         run: node --test tests/*.test.mjs
       - name: Generate from public sources
         run: node scripts/generate.mjs
+        env:
+          TMPDIR: ${{ runner.temp }}
       - name: Commit changed outputs
         run: |
           if [ -n "$(git status --porcelain)" ]; then
