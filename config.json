@@ -1,0 +1,17 @@
+{
+  "apiBase": "https://platform-api.samuelz.com/api/v1",
+  "module": "chauffeur",
+  "slug": "samuelz-chauffeur",
+  "registryName": "io.github.samuelzcom/chauffeur-booking",
+  "websiteUrl": "https://samuelz.com",
+  "logoUrl": "https://samuelz.com/favicon/android-chrome-512x512.png",
+  "docsUrl": "https://samuelz.com/en/integrations",
+  "license": "MIT",
+  "copyrightHolder": "Glöggl GmbH",
+  "repo": "samuelzcom/chauffeur-mcp",
+  "endpointVariants": [
+    { "id": "full", "path": "" },
+    { "id": "quote-only", "path": "/quote-only" },
+    { "id": "info-only", "path": "/info-only" }
+  ]
+}
