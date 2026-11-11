@@ -14,10 +14,10 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
+      "url": "https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
     }
   ],
   "title": "Samuelz Chauffeur Booking",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "websiteUrl": "https://samuelz.com/en/integrations"
 }

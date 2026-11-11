@@ -135,7 +135,7 @@ For clients/accounts that support custom remote MCP connectors, use this URL in 
 
 [OpenAPI specification](<https://platform-api.samuelz.com/api/v1/public/chauffeur/samuelz-chauffeur/openapi.json>) — Samuelz Chauffeur, version 1.0.0.
 
-Registry name: io.github.samuelzcom/chauffeur-booking. Latest registry version: 1.1.0.
+Registry name: io.github.samuelzcom/chauffeur-booking. Latest registry version: 1.1.1.
 
 [Official MCP Registry](<https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.samuelzcom%2Fchauffeur-booking>). [server.json](server.json) mirrors the latest entry’s server object.
 
