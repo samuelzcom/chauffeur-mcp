@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "samuelz-chauffeur": {
-      "url": "https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
+      "url": "https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
     }
   }
 }

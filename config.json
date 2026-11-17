@@ -1,5 +1,5 @@
 {
-  "apiBase": "https://platform-api.samuelz.com/api/v1",
+  "apiBase": "https://platform.samuelz.com/api/v1",
   "module": "chauffeur",
   "slug": "samuelz-chauffeur",
   "registryName": "io.github.samuelzcom/chauffeur-booking",

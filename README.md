@@ -14,9 +14,9 @@ All endpoints use MCP Streamable HTTP. Tool counts and server versions come from
 
 | Variant | URL | Server | Version | Tools |
 | --- | --- | --- | --- | ---: |
-| full | [https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur](<https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur>) | chauffeur-customer | 2.2.0 | 6 |
-| quote-only | [https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/quote-only](<https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/quote-only>) | chauffeur-anonymous-quotes | 1.3.0 | 3 |
-| info-only | [https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/info-only](<https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/info-only>) | chauffeur-service-information | 1.1.0 | 2 |
+| full | [https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur](<https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur>) | chauffeur-customer | 2.2.0 | 6 |
+| quote-only | [https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/quote-only](<https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/quote-only>) | chauffeur-anonymous-quotes | 1.3.0 | 3 |
+| info-only | [https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/info-only](<https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur/info-only>) | chauffeur-service-information | 1.1.0 | 2 |
 
 ## Tools per endpoint
 
@@ -68,7 +68,7 @@ Examples use the default endpoint. Substitute any URL from the endpoints table t
 ### Claude Code
 
 ```sh
-claude mcp add --transport http 'samuelz-chauffeur' 'https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur'
+claude mcp add --transport http 'samuelz-chauffeur' 'https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur'
 ```
 
 [Client documentation](https://code.claude.com/docs/en/mcp).
@@ -84,7 +84,7 @@ Add to your client’s MCP configuration. This bridge requires Node.js and downl
       "args": [
         "-y",
         "mcp-remote",
-        "https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
+        "https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
       ],
       "command": "npx"
     }
@@ -101,7 +101,7 @@ Save as `.cursor/mcp.json` (also provided in [mcp.json](mcp.json)).
 {
   "mcpServers": {
     "samuelz-chauffeur": {
-      "url": "https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
+      "url": "https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
     }
   }
 }
@@ -118,7 +118,7 @@ Save as `.vscode/mcp.json`.
   "servers": {
     "samuelz-chauffeur": {
       "type": "http",
-      "url": "https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
+      "url": "https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur"
     }
   }
 }
@@ -130,11 +130,11 @@ Save as `.vscode/mcp.json`.
 
 For clients/accounts that support custom remote MCP connectors, use this URL in the custom connector setup:
 
-[https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur](<https://platform-api.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur>)
+[https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur](<https://platform.samuelz.com/api/v1/mcp/chauffeur/samuelz-chauffeur>)
 
 ## OpenAPI and registry
 
-[OpenAPI specification](<https://platform-api.samuelz.com/api/v1/public/chauffeur/samuelz-chauffeur/openapi.json>) — Samuelz Chauffeur, version 1.0.0.
+[OpenAPI specification](<https://platform.samuelz.com/api/v1/public/chauffeur/samuelz-chauffeur/openapi.json>) — Samuelz Chauffeur, version 1.0.0.
 
 Registry name: io.github.samuelzcom/chauffeur-booking. Latest registry version: 1.1.1.
 
@@ -155,16 +155,6 @@ The following instructions are published by each live server. Read-only flags ab
 ### info-only
 
 > Provide published service and policy information for Samuelz Chauffeur only. Call get\_service\_options for the current service areas. Published languages: de, en. This server has no prices, offers, reservations or booking tools.
-
-## Where to find it
-
-- [Postman API Network](<https://www.postman.com/gloegglgmbh-5302613/samuelz-public-api/collection/bq6ce9i/samuelz-customer-api-safe-pilot-starter>)
-- [Glama](<https://glama.ai/mcp/connectors/com.samuelz.platform-api/samuelz-chauffeur-booking>)
-- [Official MCP Registry](<https://registry.modelcontextprotocol.io/v0.1/servers?search=samuelzcom>)
-- [Smithery](<https://smithery.ai/servers/developers-odjh/samuelz-chauffeur-booking>)
-- [mcpservers.org](<https://mcpservers.org/servers/samuelz-com-en-integrations>)
-- [Registry-Nachnutzer (Agent-Ready u. a.)](<https://agent-ready-directory.com/server/gh-samuelzcom-chauffeur-booking>)
-- [OpenAI](<https://chatgpt.com/plugins/plugin_asdk_app_6ac78be9f3f08191bcf4fd2a3bc7b0d4>)
 
 ## Maintenance
 
