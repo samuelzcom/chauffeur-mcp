@@ -60,6 +60,7 @@ Time zones: Europe/Berlin, Europe/Vienna.
 | --- | --- | --- |
 | Munich city | Munich city; Messe München; Munich Airport (MUC); Freising city; Eching; Garching; Hallbergmoos; Ismaning; Neufahrn; Oberschleissheim; Unterfoehring; Unterschleissheim | Europe/Berlin |
 | Vienna city | Vienna city; Vienna Airport (VIE) | Europe/Vienna |
+| Munich city | Munich city; Messe München; Munich Airport (MUC); Freising city; Eching; Garching; Hallbergmoos; Ismaning; Neufahrn; Oberschleissheim; Unterfoehring; Unterschleissheim | Europe/Berlin |
 
 ## Install
 
